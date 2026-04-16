@@ -68,16 +68,16 @@ This demonstrates how ML can be integrated into financial analytics pipelines.
 
 ```bash
 # Clone the repository
-- **git clone <your-repo-link>
+- git clone <your-repo-link>
 
 # Navigate to project
-- **cd stock_dashboard
+- cd stock_dashboard
 
 # Install dependencies
-- **pip install -r requirements.txt
+- pip install -r requirements.txt
 
 # Run server
-- **uvicorn app:app --reload
+-*uvicorn app:app --reload
 
 
 🌐 Access API
@@ -95,29 +95,29 @@ http://127.0.0.1:8000/docs
 /predict/RELIANCE.NS
 
 📈 Key Insights
-- **Daily returns help analyze short-term performance
-- **Moving averages highlight trends
-- **Comparison API identifies better-performing stocks
+- Daily returns help analyze short-term performance
+- Moving averages highlight trends
+- Comparison API identifies better-performing stocks
 The prediction feature demonstrates future trend estimation
 🚀 Future Improvements
-- **Advanced ML models (LSTM, ARIMA)
-- **Real-time streaming data
-- **Interactive frontend dashboard
-- **Deployment on cloud (Render / AWS)
-- **Caching & performance optimization
+- Advanced ML models (LSTM, ARIMA)
+- Real-time streaming data
+- Interactive frontend dashboard
+- Deployment on cloud (Render / AWS)
+- Caching & performance optimization
 
 🎥 Demo
-- **(Optional) Add a short demo video link here showcasing:
+- (Optional) Add a short demo video link here showcasing:
 
 API usage
-- **Output responses
-- **Prediction feature
+- Output responses
+- Prediction feature
 🏁 Conclusion
-- **This project showcases a complete pipeline: Data → Processing → API → Insights → ML
+- This project showcases a complete pipeline: Data → Processing → API → Insights → ML
 
 It reflects strong fundamentals in:
 
-- **Backend development
-- **Data handling
-- **Analytical thinking
-- **Practical ML integration
+- Backend development
+- Data handling
+- Analytical thinking
+- Practical ML integration
