@@ -19,9 +19,9 @@ This project demonstrates:
 ✅ Fetch real-time stock data using yfinance  
 ✅ Data cleaning & preprocessing with Pandas  
 ✅ Feature engineering:
-- Daily Returns  
-- 7-day Moving Average  
-- 52-week High & Low  
+  - Daily Returns  
+  - 7-day Moving Average  
+  - 52-week High & Low  
 
 ✅ REST APIs using FastAPI  
 ✅ SQLite database integration  
@@ -33,7 +33,7 @@ This project demonstrates:
 ## 📊 APIs Overview
 
 | Endpoint | Method | Description |
-|---------|--------|------------|
+|----------|--------|-------------|
 | `/companies` | GET | List of available stocks |
 | `/data/{symbol}` | GET | Last 30 days stock data |
 | `/summary/{symbol}` | GET | 52-week high, low, avg |
@@ -45,7 +45,7 @@ This project demonstrates:
 ## 🧠 Machine Learning Feature
 
 A simple Linear Regression model is used to:
-- Learn trend from historical closing prices  
+- Learn trends from historical closing prices  
 - Predict the next day's closing price  
 
 This demonstrates how ML can be integrated into financial analytics pipelines.
@@ -68,63 +68,56 @@ This demonstrates how ML can be integrated into financial analytics pipelines.
 
 ```bash
 # Clone the repository
-git clone <your-repo-link>
+- **git clone <your-repo-link>
 
 # Navigate to project
-cd stock_dashboard
+- **cd stock_dashboard
 
 # Install dependencies
-pip install -r requirements.txt
+- **pip install -r requirements.txt
 
 # Run server
-uvicorn app:app --reload
+- **uvicorn app:app --reload
+
 
 🌐 Access API
-
-Open Swagger UI:
+- **Open Swagger UI:
 
 http://127.0.0.1:8000/docs
-
 📌 Example Usage
 🔹 Get Stock Data
 /data/INFY.NS
+
 🔹 Compare Stocks
 /compare?symbol1=INFY.NS&symbol2=TCS.NS
+
 🔹 Predict Price
 /predict/RELIANCE.NS
 
 📈 Key Insights
-Daily returns help analyze short-term performance
-Moving averages highlight trends
-Comparison API identifies better-performing stocks
-Prediction feature demonstrates future trend estimation
-
-
+- **Daily returns help analyze short-term performance
+- **Moving averages highlight trends
+- **Comparison API identifies better-performing stocks
+The prediction feature demonstrates future trend estimation
 🚀 Future Improvements
-Advanced ML models (LSTM, ARIMA)
-Real-time streaming data
-Interactive frontend dashboard
-Deployment on cloud (Render / AWS)
-Caching & performance optimization
-
+- **Advanced ML models (LSTM, ARIMA)
+- **Real-time streaming data
+- **Interactive frontend dashboard
+- **Deployment on cloud (Render / AWS)
+- **Caching & performance optimization
 
 🎥 Demo
-
-(Optional) Add a short demo video link here showcasing:
+- **(Optional) Add a short demo video link here showcasing:
 
 API usage
-Output responses
-Prediction feature
-
-
+- **Output responses
+- **Prediction feature
 🏁 Conclusion
-
-This project showcases a complete pipeline:
-Data → Processing → API → Insights → ML
+- **This project showcases a complete pipeline: Data → Processing → API → Insights → ML
 
 It reflects strong fundamentals in:
 
-Backend development
-Data handling
-Analytical thinking
-Practical ML integration
+- **Backend development
+- **Data handling
+- **Analytical thinking
+- **Practical ML integration
