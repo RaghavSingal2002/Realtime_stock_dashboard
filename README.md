@@ -68,7 +68,7 @@ This demonstrates how ML can be integrated into financial analytics pipelines.
 
 ```bash
 # Clone the repository
-- git clone <your-repo-link>
+- git clone <https://github.com/RaghavSingal2002/Realtime_stock_dashboard>
 
 # Navigate to project
 - cd stock_dashboard
