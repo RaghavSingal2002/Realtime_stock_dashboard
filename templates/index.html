@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2>Stock Dashboard</h2>
+
+<select id="stockSelect">
+    <option value="INFY.NS">INFY</option>
+    <option value="TCS.NS">TCS</option>
+</select>
+
+<canvas id="chart"></canvas>
+
+<script>
+async function loadData(symbol) {
+    const res = await fetch(`/data/${symbol}`);
+    const data = await res.json();
+
+    const labels = data.map(d => d.Date);
+    const prices = data.map(d => d.Close);
+
+    new Chart(document.getElementById("chart"), {
+        type: "line",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: symbol,
+                data: prices
+            }]
+        }
+    });
+}
+
+document.getElementById("stockSelect").addEventListener("change", (e) => {
+    loadData(e.target.value);
+});
+
+loadData("INFY.NS");
+</script>
+
+</body>
+</html>
