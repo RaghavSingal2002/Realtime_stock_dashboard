@@ -77,11 +77,11 @@ This demonstrates how ML can be integrated into financial analytics pipelines.
 - pip install -r requirements.txt
 
 # Run server
--*uvicorn app:app --reload
+-uvicorn app:app --reload
 
 
 🌐 Access API
-- **Open Swagger UI:
+- Open Swagger UI:
 
 http://127.0.0.1:8000/docs
 📌 Example Usage
